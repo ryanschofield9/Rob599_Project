@@ -1,0 +1,5 @@
+#inputs
+float32 data
+---
+#outputs 
+bool returned 

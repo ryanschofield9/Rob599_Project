@@ -1,0 +1,5 @@
+#inputs
+int64 data
+---
+#outputs 
+bool returned 
