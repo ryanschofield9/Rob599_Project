@@ -17,16 +17,16 @@ class FindCenter(Node):
         h = msg.h 
         image_w = msg.image_w
         image_h = msg.image_h
-        print(f"x: {x}")
-        print(f"w: {w}")
+        #print(f"x: {x}")
+        #print(f"w: {w}")
 
         center_x = x + (w/2)
-        print(f"center_x: {center_x}")
+        #print(f"center_x: {center_x}")
         center_y = y+ (h/2) 
         im_center_x = image_w/2
         im_center_y = image_h/2 
-        print(f"apple box center:({center_x}, {center_y})")
-        print(f"image center({im_center_x}, {im_center_y})")
+        #print(f"apple box center:({center_x}, {center_y})")
+        #print(f"image center({im_center_x}, {im_center_y})")
         if abs(im_center_x - center_x) < 20:
             x_val = 0
             print("X is center ")
@@ -45,7 +45,7 @@ class FindCenter(Node):
             print("Y is down") 
         else: 
             y_val = 1
-            ("Y is up")
+            print("Y is up")
         
         print (f"X is {x_val} and Y is {y_val}")
         x_centered = Int64()

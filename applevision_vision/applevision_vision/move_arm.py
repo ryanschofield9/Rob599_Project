@@ -66,8 +66,6 @@ class MoveArm(Node):
         else: 
             if self.tof >self.distance:
                 my_twist_linear[2] = self.speed 
-            else:    
-                print("done")
             
         cmd = TwistStamped()
         cmd.header.frame_id = 'tool0'

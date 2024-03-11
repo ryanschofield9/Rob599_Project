@@ -133,7 +133,7 @@ class AppleVisionHandler(Node):
                 image_w=640,
                 image_h=360,
                 confidence=float(confidences[0]))
-            print(msg)
+            #print(msg)
             self.pub.publish(msg)
 
             # attempted to put in json format string
@@ -165,7 +165,7 @@ class AppleVisionHandler(Node):
         self.pub_debug.publish(debug_im)
 
         end = time.time()
-        print(f'Took {end - start:.2f} secs')
+        #print(f'Took {end - start:.2f} secs')
 
 def main(args=None):
     rclpy.init(args=args)

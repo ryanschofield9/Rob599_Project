@@ -14,7 +14,7 @@ class DistanceService(Node):
         self.pub = self.create_publisher(Int64, 'distance_request', 10)
 
     def callback(self, request, response):
-        self.get_logger().info(f"Got: {request.data}")
+        #self.get_logger().info(f"Got: {request.data}")
         msg = Int64()
         msg.data = request.data
         for i in range(10): 
