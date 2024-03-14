@@ -11,9 +11,9 @@ class ImagePub(Node):
         super().__init__('image_pub')
         self.pub = self.create_publisher(Image, 'palm_camera/image_rect_color', 10)
         self.timer = self.create_timer(1, self.callback)
-        self.image_center = cv2.imread('/home/ryan/ros2_ws_applecontroller/src/applevision_vision/applevision_vision/apple.jpg')
-        self.image_right = cv2.imread('/home/ryan/ros2_ws_applecontroller/src/applevision_vision/applevision_vision/apple_right.jpg')
-        self.image_left = cv2.imread('/home/ryan/ros2_ws_applecontroller/src/applevision_vision/applevision_vision/apple_left.jpg')
+        self.image_center = cv2.imread('/home/ryan/ros2_ws_applecontroller/src/Rob599_Project/applevision_vision/applevision_vision/apple.jpg')
+        self.image_right = cv2.imread('/home/ryan/ros2_ws_applecontroller/src/Rob599_Project/applevision_vision/applevision_vision/apple (copy)(1)(1).png')
+        self.image_left = cv2.imread('/home/ryan/ros2_ws_applecontroller/src/Rob599_Project/applevision_vision/applevision_vision/apple_left.jpg')
         self.count = 0 
         self.bridge= CvBridge()
 

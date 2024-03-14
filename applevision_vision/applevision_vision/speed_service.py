@@ -14,14 +14,14 @@ class SpeedService(Node):
         self.pub = self.create_publisher(Float32, 'speed_request', 10)
 
     def callback(self, request, response):
-        #self.get_logger().info(f"Got: {request.data}")
+        self.get_logger().info(f"Got: {request.data}")
         msg = Float32()
         msg.data = request.data
         for i in range(10): 
             self.pub.publish(msg) 
             time.sleep(0.1)
 
-        response.returned == True
+        response.returned = True
         
         return response
 def main():

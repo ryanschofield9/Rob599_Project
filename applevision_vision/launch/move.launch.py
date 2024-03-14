@@ -21,7 +21,7 @@ def generate_launch_description():
         Node(
             package='applevision_vision',
             executable='move',
-            name='move_service',
+            name='move',
         ), 
         Node(
             package='applevision_vision',
