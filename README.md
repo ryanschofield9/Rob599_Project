@@ -33,7 +33,7 @@ In image_pub.py, the images are provided by an abosulte path. This path will nee
 In _init_.py, the model path is an absolute path. This path will need to change to the path on your computer to run it correctly. 
 
 ## Launch files
-There are two launch files in the launch folder. The service.launch.py file is the one that is used for this project. It launchs the move with service's set up to change the speed of the arm and the stopping distance to the apple. The other launch file move.launch.py has parameters that controllers the speed and stopping distance, instead of the services. 
+There are two launch files in the launch folder. The service.launch.py file is the one that is used for this project. It launchs the move with services set up to change the speed of the arm and the stopping distance to the apple. The other launch file move.launch.py has parameters that controllers the speed and stopping distance, instead of the services. 
 
 ## Running with Simulation 
 To run the code with simulation, the UR5 drivers and moveit2 need to be installed. Otherwise, the launch file can be run and the messages showing speed being published can show how the system is working. 
