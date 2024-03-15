@@ -25,6 +25,8 @@ ros2 service call /servo_node/start_servo std_srvs/srv/Trigger
 ```
 ros2 launch applevision_vision service.launch.py 
 ```
+# Video 
+There is a video showing the simulation and the code working. The voice over is explaining what is happening and how to run the code. 
 
 # Things of Note 
 ## File Path changes
